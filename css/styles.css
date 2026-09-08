@@ -1,0 +1,146 @@
+/* ===== ESTILOS PERSONALIZADOS ===== */
+:root {
+    --color-primario: #2d1b69;
+    /* Violeta oscuro */
+    --color-secundario: #7c3aed;
+    /* Violeta medio */
+    --color-terciario: #8b5cf6;
+    /* Violeta suave */
+    --color-fondo: #f8f4ff;
+    /* Fondo claro con tono violeta */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+.bg-dark-custom {
+    background-color: var(--color-primario);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #f8f4ff 0%, #e8dff5 100%);
+    padding: 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* TARJETAS DE SERVICIOS */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(124, 58, 237, 0.2);
+}
+
+.card-hover .display-1 {
+    font-size: 4rem;
+}
+
+/* GALERÍA */
+.galeria-item {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    color: white;
+    border-radius: 12px;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+section {
+    padding: 80px 0;
+}
+
+/* SOBRE MÍ */
+.foto-placeholder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #8b5cf6 0%, #5b21b6 100%);
+    border-radius: 15px;
+    font-size: 5rem;
+    color: white;
+}
+
+/* CONTACTO */
+.bg-dark-custom {
+    background-color: var(--color-primario);
+}
+
+.bg-dark-custom a {
+    text-decoration: none;
+}
+
+.bg-dark-custom a:hover {
+    text-decoration: underline;
+}
+
+/* BOTONES */
+.btn-primary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    padding: 12px 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6d28d9;
+    border-color: #6d28d9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+}
+
+/* FOOTER */
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+        min-height: 50vh;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .foto-placeholder {
+        height: 200px;
+    }
+}

@@ -12,149 +12,8 @@
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        /* ===== ESTILOS PERSONALIZADOS ===== */
-        :root {
-            --color-primario: #1a1a2e;
-            --color-secundario: #e94560;
-            --color-fondo: #f5f7fa;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            overflow-x: hidden;
-        }
-
-        /* HEADER */
-        .bg-dark-custom {
-            background-color: var(--color-primario);
-        }
-
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 100px 0;
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-        }
-
-        /* TARJETAS DE SERVICIOS */
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: none;
-            border-radius: 15px;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .card-hover .display-1 {
-            font-size: 4rem;
-        }
-
-        /* GALERÍA */
-        .galeria-item {
-            height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
-            color: white;
-            border-radius: 12px;
-            font-size: 2rem;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .galeria-item:hover {
-            transform: scale(1.05);
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 80px 0;
-        }
-
-        /* SOBRE MÍ */
-        .foto-placeholder {
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
-            font-size: 5rem;
-            color: white;
-        }
-
-        /* CONTACTO */
-        .bg-dark-custom {
-            background-color: var(--color-primario);
-        }
-
-        .bg-dark-custom a {
-            text-decoration: none;
-        }
-
-        .bg-dark-custom a:hover {
-            text-decoration: underline;
-        }
-
-        /* BOTONES */
-        .btn-primary {
-            background-color: var(--color-secundario);
-            border-color: var(--color-secundario);
-            padding: 12px 40px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #c73e54;
-            border-color: #c73e54;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
-        }
-
-        /* FOOTER */
-        footer a {
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: underline;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero {
-                padding: 60px 0;
-                min-height: 50vh;
-            }
-
-            section {
-                padding: 50px 0;
-            }
-
-            .foto-placeholder {
-                height: 200px;
-            }
-        }
-    </style>
+    <!-- 🔥 CSS PERSONALIZADO (archivo separado) -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -164,8 +23,10 @@
     <!-- ======================================== -->
     <header class="bg-dark-custom text-white py-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h4 mb-0">
-                <span class="me-2">🧵</span> 23 Puntadas Costuras
+            <h1 class="h4 mb-0 d-flex align-items-center">
+                <img src="img/logo23puntadascosturas.jpeg" alt="23 Puntadas Costuras"
+                    style="height: 40px; width: auto; border-radius: 5px; margin-right: 10px;">
+                23 Puntadas Costuras
             </h1>
             <a href="https://instagram.com/23puntadascosturas" target="_blank" class="btn btn-outline-light btn-sm">
                 <i class="fab fa-instagram me-1"></i> Instagram
@@ -277,13 +138,12 @@
         <div class="row align-items-center g-4">
             <div class="col-md-6">
                 <h2 class="display-5 fw-bold mb-4">Detrás de la máquina</h2>
-                <p class="lead">Soy Lorena Pereyra, modista con más de X años de experiencia.</p>
-                <p>Cada puntada cuenta una historia y cada prenda tiene un alma. Me encanta transformar telas en piezas
+                <p class="lead">Soy Lorena Pereyra, modista con más de 8 años de experiencia.</p>
+                <p>Cada puntada cuenta una historia y cada prenda recuerdos. Me encanta transformar telas en piezas
                     únicas que acompañan a mis clientes en sus momentos especiales.</p>
                 <div class="mt-4">
                     <p><i class="fas fa-map-pin text-primary me-2"></i> <strong>Ubicación:</strong> Malvinas
-                        Argentinas,Córdoba
-                        Argentina]</p>
+                        Argentinas, Córdoba, Argentina</p>
                     <p><i class="fas fa-clock text-primary me-2"></i> <strong>Horario:</strong> Lunes a Sábado de 9:00 a
                         20:00</p>
                 </div>
@@ -292,12 +152,13 @@
                 <div class="foto-placeholder"
                     style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); border-radius: 15px; padding: 30px;">
                     <img src="img/logo23puntadascosturas.jpeg" alt="Logo 23 Puntadas Costuras" style="max-height: 280px; width: 100%; object-fit: contain; 
-                    border-radius: 10px; 
-                    background: white; 
-                    padding: 20px;
-                    box-shadow: 0 10px 40px rgba(0,0,0,0.4);">
+                            border-radius: 10px; 
+                            background: white; 
+                            padding: 20px;
+                            box-shadow: 0 10px 40px rgba(0,0,0,0.4);">
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- ======================================== -->
